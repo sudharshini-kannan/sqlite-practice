@@ -38,3 +38,30 @@ Queries were written to:
 ## Purpose
 This project demonstrates foundational SQL skills relevant for bioinformatics, data analysis, and research roles.
 
+Python Automation & Data Export
+
+In addition to writing SQL queries manually in SQLite, this project demonstrates how to automate database analysis using Python.
+
+Objective
+
+To connect a SQLite database to Python, execute analytical queries, and export structured results for reporting.
+
+Workflow
+
+Connect to SQLite database (genes.db) using sqlite3
+
+Execute SQL query inside Python
+
+Load results into a pandas DataFrame
+
+Export results as a CSV file for reporting
+
+SQL Query Used
+SELECT species, AVG(length) AS avg_length
+FROM genes
+GROUP BY species;
+
+Result
+
+The query calculates the average gene length for each species in the dataset.
+
